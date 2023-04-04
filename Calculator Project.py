@@ -29,23 +29,28 @@ total - keeps the total going
 X - what the user enters that goes into the total
 """
 
-"""importing for print f """
-import os, sys
-
-"""Total is the final number after the math has been done"""
 total = 0.0
+"""Total is the final number after the math has been done"""
 
-"""X is user inputted number"""
 X = 0.0
+"""X is user inputted number"""
 
-"""Op is the operator that will preform"""
 op = ''
+"""Op is the operator that will preform"""
 
-"""yn is a yes or no if the user wants to keep going"""
 yn = 'y'
+"""yn is a yes or no if the user wants to keep going"""
 
 
 def Calculator(total : int, op : str, X : int):
+    """This is where the calculations are done
+    D - Divide
+    M - Multiply
+    A - Add
+    S - Substract 
+
+    Returns the total
+    """
     int(total)
     int(X)
     match op.upper(): 
